@@ -1,0 +1,92 @@
+
+/*** media area ****/
+@media (max-width: 991px) {    
+    #service {
+        text-align: center;
+        .service-icon {
+            min-height: 80px;        
+            margin-bottom: 15px;
+        }
+        .box {
+            margin-bottom: 30px;
+        }
+    }
+    .foot-menu {
+        ul {
+            li {
+                margin-bottom: 20px;
+            }
+        }
+    }    
+}
+
+@media (max-width:767px){
+    .mobile {
+        display: block;
+    }
+    .logo {
+        margin-left: 0;
+    }
+    #menu {
+        > .navbar.mobile {
+            position: absolute;
+            right: 20px;
+            top: 13px;
+            z-index: 10;
+            button {
+                color: #777;
+                font-size: 40px;
+            }
+        }
+        .navbar {
+            margin: 0 -15px;
+            padding-bottom: 20px;
+            background: #fff;
+            a {
+                text-align: left;
+                padding: 10px 0 12px;
+                margin: 0 0 5px;
+                display: block;
+            }
+        }        
+    }   
+    .block {
+        .container {
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+        h1 {
+            margin-bottom: 30px;
+            font-size: 30px;
+            padding-bottom: 30px!important;
+        }
+    }
+    #magic {
+        .magic-img {
+            position: relative;
+            height: 300px;
+            width: 100%;
+        }
+        .magic-content {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }  
+    .foot-menu {
+        ul {
+            li {
+                margin-bottom: 20px;
+                display: block;
+            }
+        }
+    } 
+    header.inner{
+        #banner {
+            .inner-title {
+                h1 {
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+}
