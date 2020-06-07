@@ -326,11 +326,11 @@ h1 {
         position: relative;
         top: -40px;
         opacity: 0;
-        transition: top 1s ease, opacity 1s ease-out;
+        transition: top 0.6s ease, opacity 0.6s ease-out;
     }
     &.in{
         .box {            
-            transition-delay: 0.3s;
+            transition-delay: 0.5s;
             top: 0;
             opacity: 1;
         }
