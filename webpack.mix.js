@@ -1,5 +1,6 @@
 const mix = require('laravel-mix');
 
+require('laravel-mix-eslint');
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -11,6 +12,11 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
+mix.js('resources/js/app.js', 'public/js').eslint({
+        fix: false,
+        cache: false,
+        exclude: /node_modules/,
+    //...
+    })
     .sass('resources/sass/app.scss', 'public/css')
     .copyDirectory('resources/images', 'public/images');
