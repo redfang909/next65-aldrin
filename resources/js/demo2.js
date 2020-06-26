@@ -1,4 +1,4 @@
-class Demo {  
+class Demo2 {  
   onLoadWindow(){
     $(window).on('load', function () {
       $('html, body').animate({ scrollTop: 0 }, 800);
@@ -32,14 +32,6 @@ class Demo {
       $('html, body').animate({ scrollTop: scrollToService }, 'slow');
     });
   }
-
-  onhan(){
-    console.log('rewrewr');
-  }
-
-  onLog(){
-    console.log('wrer');    
-  }
 }
 
-export default Demo;
+export default Demo2;

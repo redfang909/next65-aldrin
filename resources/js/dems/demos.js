@@ -1,4 +1,5 @@
-class Demo {  
+/* eslint-disable no-alert, no-console */
+class Demos {  
   onLoadWindow(){
     $(window).on('load', function () {
       $('html, body').animate({ scrollTop: 0 }, 800);
@@ -32,14 +33,6 @@ class Demo {
       $('html, body').animate({ scrollTop: scrollToService }, 'slow');
     });
   }
-
-  onhan(){
-    console.log('rewrewr');
-  }
-
-  onLog(){
-    console.log('wrer');    
-  }
 }
 
-export default Demo;
+export default Demos;
