@@ -37,8 +37,9 @@ class Demo {
     console.log('rewrewr');
   }
 
-  onLog(){
-    console.log('wrer');    
+  onBot(){
+    console.log('reere');
+    
   }
 }
 
