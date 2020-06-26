@@ -32,6 +32,11 @@ class Demo {
       $('html, body').animate({ scrollTop: scrollToService }, 'slow');
     });
   }
+
+  onLog(){
+    console.log('wrer');
+    
+  }
 }
 
 export default Demo;
