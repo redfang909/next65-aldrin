@@ -32,6 +32,11 @@ class Demo {
       $('html, body').animate({ scrollTop: scrollToService }, 'slow');
     });
   }
+
+  onhan(){
+    console.log('rewrewr');
+    
+  }
 }
 
 export default Demo;
