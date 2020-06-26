@@ -37,8 +37,8 @@ class Demo {
     console.log('rewrewr');
   }
 
-  onHala(){
-    console.log('drwrwe');
+  onWee(){
+    console.log('werewrerewewrew');
     
   }
 }
