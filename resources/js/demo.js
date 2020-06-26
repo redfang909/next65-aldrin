@@ -36,10 +36,13 @@ class Demo {
   onhan(){
     console.log('rewrewr');
   }
-  
+
   onWee(){
     console.log('werewrerewewrew');
-    
+  }
+
+  onK() {
+    return '';
   }
 }
 
