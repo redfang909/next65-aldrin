@@ -32,18 +32,6 @@ class Demo {
       $('html, body').animate({ scrollTop: scrollToService }, 'slow');
     });
   }
-
-  onhan(){
-    console.log('rewrewr');
-  }
-
-  onWee(){
-    console.log('werewrerewewrew');
-  }
-
-  onK() {
-    return '';
-  }
 }
 
 export default Demo;
