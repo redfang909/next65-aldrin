@@ -1,6 +1,8 @@
 const mix = require('laravel-mix');
 
 require('laravel-mix-eslint');
+
+const tailwindcss = require('tailwindcss');
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -19,4 +21,8 @@ mix.js('resources/js/app.js', 'public/js').eslint({
     //...
     })
     .sass('resources/sass/app.scss', 'public/css')
+    .options({
+        processCssUrls: false,
+        postCss: [ tailwindcss('./tailwind.config.js') ],
+      })
     .copyDirectory('resources/images', 'public/images');

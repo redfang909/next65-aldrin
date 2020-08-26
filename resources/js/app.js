@@ -1,7 +1,7 @@
 /* eslint-disable no-use-before-define */
 import Demo from './demo';
-import Demo2 from './demo2';
 import Demos from './dems/demos';
+import 'alpinejs';
 require('./bootstrap');
 
 const a = new Demos();
@@ -10,6 +10,3 @@ const demo = new Demo();
 demo.onLoadWindow();
 demo.onDocScroll();
 demo.onStageClick();
-
-const demo2 = new Demo2();
-demo2.onLoadWindow();

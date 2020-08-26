@@ -24,3 +24,8 @@ Route::get('/aboutus', function () {
 Route::get('/contactus', function () {
     return view('contactus');
 })->name('contactus');
+
+
+Route::get('/tailwind', function () {
+    return view('tailwind', ["king" => "special"]);
+})->name('tailwind');

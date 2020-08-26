@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 $lato: 'Lato', sans-serif;
 $bgColor: #fcbb08;
 %demo-border {
@@ -15,7 +19,6 @@ $bgColor: #fcbb08;
 body, html, header {
     height: 100%;
     min-height: 100%;
-    font-family: $lato;
     color: #777;
 }
 h1 {
@@ -44,8 +47,8 @@ h1 {
         justify-content: flex-end;
         margin-top: 20px;
     }
-    .navbar-nav { 
-        a{            
+    .navbar-nav {
+        a{
             text-transform: uppercase;
             color: #464847;
             font: 14px $lato;
@@ -80,15 +83,15 @@ h1 {
         @include goAnimate(2.5s);
     }
 }
-#banner {    
+#banner {
     height: 100%;
-    min-height: 100%;    
+    min-height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     .banner-bg {
         background: url(../images/nature-forest-trees-fog.jpeg) no-repeat center;
-        background-size: cover; 
+        background-size: cover;
         top: 0;
         bottom: 0;
         width: 100%;
@@ -96,7 +99,7 @@ h1 {
         opacity: 0;
         z-index: 0;
         transition: opacity 1.3s ease;
-    }  
+    }
     &.go{
         .banner-bg {
             @include goAnimate(2s);
@@ -109,7 +112,7 @@ h1 {
             transition-delay: 2s;
             opacity: 1;
         }
-    } 
+    }
     h1 {
         font: 80px $lato;
         text-transform: uppercase;
@@ -122,10 +125,10 @@ h1 {
         z-index: 1;
         font-size: 16px;
         text-align: center;
-        letter-spacing: 1px;   
+        letter-spacing: 1px;
         p {
             margin-bottom: 0;
-        }  
+        }
         > div {
             position: relative;
             height: 100%;
@@ -137,16 +140,16 @@ h1 {
                 bottom:0;
                 transition: width 1.3s ease;
                 @extend %demo-border;
-            }       
+            }
             &:after {
                 width: 3px;
                 height: 0;
                 left: 0;
-                bottom:0;           
+                bottom:0;
                 transition: height 1.3s ease;
                 @extend %demo-border;
             }
-        }  
+        }
         &:before {
             width: 0;
             height: 3px;
@@ -154,12 +157,12 @@ h1 {
             top:0;
             transition: width 1.3s ease;
             @extend %demo-border;
-        }       
+        }
         &:after {
             width: 3px;
             height: 0;
             right: 0;
-            top:0;           
+            top:0;
             transition: height 1.3s ease;
             @extend %demo-border;
         }
@@ -229,7 +232,7 @@ h1 {
     display: none;
 }
 #service {
-    background-color: #f6f8fa;   
+    background-color: #f6f8fa;
     color: #777777;
     h3 {
         font: 16px $lato;
@@ -252,7 +255,7 @@ h1 {
     .percent {
         height: 2px;
         position: relative;
-        background-color: #f0f0f0;       
+        background-color: #f0f0f0;
         > div {
             position: relative;
             height: 100%;
@@ -267,7 +270,7 @@ h1 {
                 @include transition(width, 2s);
             }
         }
-        span {                        
+        span {
             position: absolute;
             top: 100%;
             right: 0;
@@ -288,14 +291,14 @@ h1 {
 }
 #magic {
     position: relative;
-    background-color: #f6f8fa;    
+    background-color: #f6f8fa;
     padding: 0;
     .container {
         padding-top: 0;
         padding-bottom: 0;
     }
     .magic-img {
-        position: absolute; 
+        position: absolute;
         left: 0;
         top: 0;
         bottom: 0;
@@ -306,7 +309,7 @@ h1 {
         opacity: 0;
         transition: background-size 1s ease, opacity 1.5s ease-out;
     }
-    h1 {        
+    h1 {
         padding-bottom: 70px;
         margin: 0 0 30px;
     }
@@ -329,7 +332,7 @@ h1 {
         transition: top 0.6s ease, opacity 0.6s ease-out;
     }
     &.in{
-        .box {            
+        .box {
             transition-delay: 0.5s;
             top: 0;
             opacity: 1;
@@ -357,7 +360,7 @@ h1 {
                 opacity: 1!important;
             }
         }
-    }   
+    }
     .container {
         padding-top: 120px;
         padding-bottom: 120px;
@@ -366,8 +369,8 @@ h1 {
         position: relative;
         padding-bottom: 20px;
         margin-bottom: 80px;
-        &:after { 
-            @extend %demo-border;           
+        &:after {
+            @extend %demo-border;
             width: 0px;
             height: 3px;
             bottom: 0;
@@ -447,7 +450,7 @@ header.inner{
         .banner-bg {
             opacity: 1;
         }
-    }    
+    }
 }
 .inner-content {
     padding: 80px 0;

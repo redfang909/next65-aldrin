@@ -17,6 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"/>
     <link rel="stylesheet" href="{{ asset('css/app.css') }}" >
+    @stack('scripts')
   </head>
   <body>
     @include('layout.menu')
